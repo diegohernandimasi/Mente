@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  /* Refined Pastel Palette */
+  --color-pastel-rose: #FFF5F7;
+  --color-pastel-blue: #EBF8FF;
+  --color-pastel-green: #F0FFF4;
+  --color-pastel-yellow: #FFFFF0;
+  --color-pastel-purple: #FAF5FF;
+  --color-pastel-mint: #E6FFFA;
+  
+  --color-accent-rose: #FFB7C5;
+  --color-accent-blue: #BEE3F8;
+  --color-accent-green: #C6F6D5;
+  --color-accent-purple: #E9D8FD;
+}
+
+body {
+  @apply bg-[#FDFCFB] text-slate-800 antialiased;
+}
+
+/* Custom range slider styling */
+input[type="range"]::-webkit-slider-thumb {
+  @apply w-5 h-5 bg-white border-2 border-slate-200 rounded-full shadow-sm;
+  appearance: none;
+}
+
+.glass-card {
+  @apply bg-white/70 backdrop-blur-md border border-white/50 shadow-sm;
+}
+
+.btn-minimal {
+  @apply px-6 py-3 rounded-2xl transition-all duration-300 font-medium tracking-tight active:scale-95;
+}
